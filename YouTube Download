@@ -1,0 +1,10 @@
+#!/bin/bash
+
+ytvideo(){
+    read -p "Enter the YouTube link : " link
+    cd ~/Desktop
+    yt-dlp -S "+codec:h264" -o "%(title)s.%(ext)s" "${link}" || \
+    echo "link is unrecognizable"
+}
+
+ytvideo
