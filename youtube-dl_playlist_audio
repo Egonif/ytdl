@@ -1,0 +1,13 @@
+#!/bin/bash
+
+mkdir ~/Desktop/youtube-audio-playlist
+cd ~/Desktop/youtube-audio-playlist
+
+read -p "YouTube's playlist URL : " url
+
+read -p "Audio format : " format
+
+read -p "Enter the videos numbers (ex : 1-3,5-6) : " num
+
+# Download all the playlist's audios
+yt-dlp -o "%(title)s.%(ext)s" -x --audio-format "${format}" --yes-playlist --playlist-items "${num}" "${url}"
