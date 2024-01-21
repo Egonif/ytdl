@@ -2,9 +2,9 @@
 
 Here's a repository where you can download the latest yt-dlp updates for downloading YouTube videos.
 
-## Installation
+# Installation
 
-### MacOS
+## MacOS
 
 Install Homebrew (package manager):
 ```bash
@@ -17,7 +17,7 @@ Install yt-dlp and ffmpeg
 brew install yt-dlp ffmpeg
 ```
 
-### Windows
+## Windows
 
 Install Chocolatey (package manager) with PowerShell:
 
@@ -36,7 +36,7 @@ Finally, use Chocolatey to install yt-dlp and ffmpeg:
 choco install yt-dlp ffmpeg
 ```
 
-## Usage
+# Usage
 
 There are differents options for yt-dlp, but here's some examples:
 ```bash
