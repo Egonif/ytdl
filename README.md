@@ -45,6 +45,11 @@ yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -o "%(title
 ```
 
 ```bash
+# Download best video in mp4 for mac user
+yt-dlp -S "+codec:h264" -o "%(title)s.%(ext)s" [YOUR LINK HERE]
+```
+
+```bash
 # Download mp3 audio
 yt-dlp -o "%(title)s.%(ext)s" -x --audio-format mp3 [YOUR LINK HERE]
 ```
