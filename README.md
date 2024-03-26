@@ -41,7 +41,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 Finally, use Chocolatey to install yt-dlp and ffmpeg:
 
 ```powershell
-choco install yt-dlp ffmpeg
+choco install yt-dlp ffmpeg -y
 ```
 
 # Usage
