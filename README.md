@@ -24,30 +24,10 @@ brew install yt-dlp ffmpeg
 
 ## Windows
 
-Open Cmd in Administrator Mode (Beta)
+Open Cmd in Administrator Mode
 
 ```powershell
 curl -s --location --request GET https://raw.githubusercontent.com/Egonif/ytdl/main/install.cmd --output %TEMP%\install.cmd && %TEMP%\install.cmd
-```
-
-Install Chocolatey (package manager) with PowerShell:
-
-You must ensure Get-ExecutionPolicy is not Restricted:
-
-```powershell
-Set-ExecutionPolicy AllSigned
-```
-
-Then install Chocolatey:
-
-```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-```
-
-Finally, use Chocolatey to install yt-dlp and ffmpeg:
-
-```powershell
-choco install yt-dlp ffmpeg -y
 ```
 
 # Usage
