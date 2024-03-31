@@ -7,8 +7,8 @@ for /f "usebackq delims=" %%I in (`powershell %browseforfolder%`) do set "destin
 
 :loop
 cls
-set /p "url=Entrer le lien de la vidéo: "
-set /p "format=Entrer le format de la vidéo (mp3/mp4): "
+set /p "url=Entrer le lien de la video: "
+set /p "format=Entrer le format de la video (mp3/mp4): "
 
 if "%format%"=="mp3" (
     @REM Download mp3
