@@ -10,5 +10,5 @@ choco install yt-dlp ffmpeg -y
 
 @REM Installation desktop application
 if "%desktopapp%"=="y" (
-    curl -s --location --request GET https://raw.githubusercontent.com/Egonif/ytdl/main/YouTube%20Download.cmd --output "%USERPROFILE%\Desktop\YouTube Download.cmd" && echo [OK] Installation desktop installation || echo [ERROR] Installation desktop installation
+    curl -s --location --request GET "https://raw.githubusercontent.com/Egonif/ytdl/main/YouTube%%20Download.cmd" --output "%USERPROFILE%\Desktop\YouTube Download.cmd" && echo [OK] Installation desktop installation || echo [ERROR] Installation desktop installation
 )
